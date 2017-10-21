@@ -14,7 +14,7 @@ int main(){
 	for(int i=1;i<n;i++){
 		for(int j=0;j<=i;j++){
 			for(int k=j;k<j+2;k++){
-				t[k]=s[i-1][k]+s[]
+				if()
 			}
 		}
 	}
