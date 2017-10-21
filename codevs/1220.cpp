@@ -4,10 +4,6 @@
 #include<algorithm>
 using namespace std;
 int t[100];
-int max(int r){
-	sort(t,t+r);
-	return t[r];
-}
 int main(){
 	int n;
 	scanf("%d",&n);
