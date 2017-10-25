@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdio.h>
+#include<algorithm>
 using namespace std;
 int t[100][100],s[100][100];
 int main(){
@@ -24,6 +25,7 @@ int main(){
 			t[i][j]=mt+s[i][j];
 		}
 	}
+	sort(t[n-1],t[n-1]+n);
 	cout<<t[n-1][0]<<endl;
 	for(int i=1;i<n;i++){
 		for(int j=0;j<n;j++){
@@ -34,7 +36,8 @@ int main(){
 			t[i][j]=mt+s[i][j];
 		}
 	}
-	cout<<t[n-1][0];
+	sort(t[n-1],t[n-1]+n);
+	cout<<t[n-1][n-1];
 	cin.get();
 	cin.get();
 	return 0;
