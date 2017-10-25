@@ -7,7 +7,7 @@ int main(){
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
 		t[0][i]=0;
-		scanf("%d",&s[0][i];
+		scanf("%d",&s[0][i]);
 	}
 	for(int i=1;i<n;i++){
 		for(int j=0;j<n-i;j++){
@@ -16,7 +16,7 @@ int main(){
 	}
 	int mt;
 	for(int i=1;i<n;i++){
-		for(int j=0;j<n-1;j++){
+		for(int j=0;j<n-i;j++){
 			mt=9999999;
 			for(int k=0;k<i;k++){
 				mt=(mt<t[k][j]+t[i-k-1][j+k+1])?mt:t[k][j]+t[i-k-1][j+k+1];
