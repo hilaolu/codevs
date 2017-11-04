@@ -15,7 +15,6 @@ int main(){
 	ma[mx-1][my-2]=1;
 	ma[mx][my]=1;
 	s[2][1]=1;
-	cout<<endl;
 	for(int i=2;i<=bx;i++){
 		for(int j=2;j<=by;j++){
 			if(!ma[i][j])s[i][j]=s[i-1][j]+s[i][j-1];
